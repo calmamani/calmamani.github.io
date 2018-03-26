@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://calmamani.github.io/about/</loc>
     <lastmod>2018-03-26T17:06:19+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://calmamani.github.io/</loc>
     <lastmod>2018-03-26T17:06:19+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://calmamani.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://calmamani.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
