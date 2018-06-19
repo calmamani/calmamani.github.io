@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Calm On Technology</title>
-    <link>https://calmamani.github.io/</link>
-    <description>Recent content on Calm On Technology</description>
+    <title>Posts on Calm On Technology</title>
+    <link>https://calmamani.github.io/posts/</link>
+    <description>Recent content in Posts on Calm On Technology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Jun 2018 10:58:56 +0300</lastBuildDate>
     
-	<atom:link href="https://calmamani.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://calmamani.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://calmamani.github.io/posts/hello-world/</guid>
       <description>Assembly x64 ; Define variables in the data section SECTION .DATA hello: db &#39;Hello world!&#39;,10 helloLen: equ $-hello ; Code goes in the text section SECTION .TEXT GLOBAL _start _start: mov eax,4 ; &#39;write&#39; system call = 4 mov ebx,1 ; file descriptor 1 = STDOUT mov ecx,hello ; string to write mov edx,helloLen ; length of string to write int 80h ; call the kernel ; Terminate program mov eax,1 ; &#39;exit&#39; system call mov ebx,0 ; exit with error code 0 int 80h ; call the kernel  Java public class Hello { public static void main(String.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://calmamani.github.io/about/</link>
-      <pubDate>Mon, 26 Mar 2018 17:06:19 +0300</pubDate>
-      
-      <guid>https://calmamani.github.io/about/</guid>
-      <description> About Page </description>
     </item>
     
   </channel>

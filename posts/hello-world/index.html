@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Calm On Technology  | About</title>
+    <title>Calm On Technology  | Hello World In Several Languages</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -22,20 +22,16 @@
 
     
 
-    <meta property="og:title" content="About" />
-<meta property="og:description" content=" About Page " />
+    <meta property="og:title" content="Hello World In Several Languages" />
+<meta property="og:description" content="Assembly x64 ; Define variables in the data section SECTION .DATA hello: db &#39;Hello world!&#39;,10 helloLen: equ $-hello ; Code goes in the text section SECTION .TEXT GLOBAL _start _start: mov eax,4 ; &#39;write&#39; system call = 4 mov ebx,1 ; file descriptor 1 = STDOUT mov ecx,hello ; string to write mov edx,helloLen ; length of string to write int 80h ; call the kernel ; Terminate program mov eax,1 ; &#39;exit&#39; system call mov ebx,0 ; exit with error code 0 int 80h ; call the kernel  Java public class Hello { public static void main(String." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://calmamani.github.io/about/" />
+<meta property="og:url" content="https://calmamani.github.io/posts/hello-world/" />
 
 
 
-<meta property="article:published_time" content="2018-03-26T17:06:19&#43;03:00"/>
+<meta property="article:published_time" content="2018-06-19T10:58:56&#43;03:00"/>
 
-<meta property="article:modified_time" content="2018-03-26T17:06:19&#43;03:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2018-06-19T10:58:56&#43;03:00"/>
 
 
 
@@ -43,20 +39,24 @@
 
 
 
-<meta itemprop="name" content="About">
-<meta itemprop="description" content=" About Page ">
 
 
-<meta itemprop="datePublished" content="2018-03-26T17:06:19&#43;03:00" />
-<meta itemprop="dateModified" content="2018-03-26T17:06:19&#43;03:00" />
-<meta itemprop="wordCount" content="2">
+
+
+<meta itemprop="name" content="Hello World In Several Languages">
+<meta itemprop="description" content="Assembly x64 ; Define variables in the data section SECTION .DATA hello: db &#39;Hello world!&#39;,10 helloLen: equ $-hello ; Code goes in the text section SECTION .TEXT GLOBAL _start _start: mov eax,4 ; &#39;write&#39; system call = 4 mov ebx,1 ; file descriptor 1 = STDOUT mov ecx,hello ; string to write mov edx,helloLen ; length of string to write int 80h ; call the kernel ; Terminate program mov eax,1 ; &#39;exit&#39; system call mov ebx,0 ; exit with error code 0 int 80h ; call the kernel  Java public class Hello { public static void main(String.">
+
+
+<meta itemprop="datePublished" content="2018-06-19T10:58:56&#43;03:00" />
+<meta itemprop="dateModified" content="2018-06-19T10:58:56&#43;03:00" />
+<meta itemprop="wordCount" content="194">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content=" About Page "/>
+<meta name="twitter:title" content="Hello World In Several Languages"/>
+<meta name="twitter:description" content="Assembly x64 ; Define variables in the data section SECTION .DATA hello: db &#39;Hello world!&#39;,10 helloLen: equ $-hello ; Code goes in the text section SECTION .TEXT GLOBAL _start _start: mov eax,4 ; &#39;write&#39; system call = 4 mov ebx,1 ; file descriptor 1 = STDOUT mov ecx,hello ; string to write mov edx,helloLen ; length of string to write int 80h ; call the kernel ; Terminate program mov eax,1 ; &#39;exit&#39; system call mov ebx,0 ; exit with error code 0 int 80h ; call the kernel  Java public class Hello { public static void main(String."/>
 
   </head>
 
@@ -111,16 +111,132 @@
     <article class="center cf pv5 ph3 ph4-ns mw7">
       <header>
         <p class="f6 b helvetica tracked">
-          
+          POSTS
         </p>
         <h1 class="f1">
-          About
+          Hello World In Several Languages
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         
 
-<h1 id="about-page">About Page</h1>
+<h2 id="assembly-x64">Assembly x64</h2>
+
+<pre><code>; Define variables in the data section
+SECTION .DATA
+    hello:    db 'Hello world!',10
+    helloLen: equ $-hello
+
+; Code goes in the text section
+SECTION .TEXT
+	GLOBAL _start 
+
+_start:
+	mov eax,4            ; 'write' system call = 4
+	mov ebx,1            ; file descriptor 1 = STDOUT
+	mov ecx,hello        ; string to write
+	mov edx,helloLen     ; length of string to write
+	int 80h              ; call the kernel
+
+	; Terminate program
+	mov eax,1            ; 'exit' system call
+	mov ebx,0            ; exit with error code 0
+	int 80h              ; call the kernel
+</code></pre>
+
+<h2 id="java">Java</h2>
+
+<pre><code>public class Hello {
+    public static void main(String... args) {
+    	System.out.println(&quot;Hello World!&quot;);
+    }
+}
+</code></pre>
+
+<h2 id="scala">Scala</h2>
+
+<pre><code>object Hello {
+	def main(args: Array[String]): Unit = {
+		println(&quot;Hello World!&quot;)
+	}
+}
+</code></pre>
+
+<h2 id="c">C</h2>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+	printf(&quot;Hello World!&quot;);
+
+	return 0;
+}
+</code></pre>
+
+<h2 id="c-1">C++</h2>
+
+<pre><code>#include &lt;iostream.h&gt;
+using namespace std;
+
+int main() {
+	cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;
+	return 0;
+}
+
+</code></pre>
+
+<h2 id="go">Go</h2>
+
+<pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+	fmt.Println(&quot;Hello World!&quot;)
+}
+
+</code></pre>
+
+<h2 id="rust">Rust</h2>
+
+<pre><code>fn main() {
+	println!(&quot;Hello World!&quot;)
+}
+</code></pre>
+
+<h2 id="javascript">JavaScript</h2>
+
+<pre><code>(function(){
+	&quot;use strict&quot;;
+	function hello() {
+		console.log(&quot;Hello World!&quot;)
+		alert(&quot;Hello World!&quot;)
+	}
+	hello();
+})();
+</code></pre>
+
+<h2 id="python">Python</h2>
+
+<pre><code>print(&quot;Hello World!&quot;)
+</code></pre>
+
+<h2 id="julia">Julia</h2>
+
+<pre><code>println(&quot;hello world&quot;)
+</code></pre>
+
+<h2 id="bash">Bash</h2>
+
+<pre><code>echo &quot;Hello World!&quot;
+</code></pre>
+
+<h2 id="php">PHP</h2>
+
+<pre><code>&lt;?php
+echo(&quot;Hello World!&quot;);
+?&gt;
+</code></pre>
 
       </div>
     </article>
